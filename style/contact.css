@@ -1,0 +1,386 @@
+
+/* Hero Section */
+.contact-hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background: #fafafa;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 60px;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.info-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.social-links {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.social-links h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background: #f5f5f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Contact Form */
+.contact-form-container {
+    background: #fff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.form-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.form-subtitle {
+    color: #666;
+    margin-bottom: 35px;
+    font-size: 15px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.3s;
+    background: #fafafa;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #000;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #999;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+select.form-input {
+    cursor: pointer;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    color: #666;
+    font-size: 14px;
+}
+
+.checkbox-input {
+    margin-right: 10px;
+    margin-top: 3px;
+    cursor: pointer;
+    accent-color: #000;
+}
+
+.submit-btn {
+    padding: 15px 40px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Map Section */
+.map-section {
+    background: #fff;
+    padding: 0;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.map-content {
+    text-align: center;
+    color: #666;
+}
+
+.map-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.map-content p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.map-content span {
+    font-size: 14px;
+    color: #999;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.faq-item {
+    background: #fafafa;
+    padding: 30px;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.faq-item:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.faq-item p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .search-bar {
+        flex: 1;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .contact-form-container {
+        padding: 30px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+    
+    .form-title {
+        font-size: 24px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-form-container,
+.info-card,
+.faq-item {
+    animation: fadeInUp 0.6s ease-out;
+}
