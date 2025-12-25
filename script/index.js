@@ -1,7 +1,8 @@
-var imgs = ['images/1.avif','images/2.avif','images/3.avif','images/4.avif','images/5.avif'];
-var container = document.getElementById('img');
-var selected = 0;
-var timer;
+//slider
+let imgs = ['images/1.avif','images/2.avif','images/3.avif','images/4.avif','images/5.avif'];
+let container = document.getElementById('img');
+let selected = 0;
+let timer;
 
 function nextImg() {
     selected++;
@@ -9,7 +10,7 @@ function nextImg() {
     container.src = imgs[selected];
 }
 
-function autoSlide() {
+function startSlider() {
     timer = setInterval(nextImg, 3000);
 }
 
@@ -20,9 +21,9 @@ container.addEventListener("mouseenter", function () {
 
 
 container.addEventListener("mouseleave", function () {
-    autoSlide();
+    startSlider();
 });
 
 window.onload = function () {
-    autoSlide();
+    startSlider();
 };
