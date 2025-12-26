@@ -15,7 +15,7 @@
           <div class="logo">Cyber</div>
           <nav class="nav-menu">
             <a href="/index.html" class="nav-link active">Home</a>
-            <a href="#" class="nav-link">About</a>
+            <a href="/about.html" class="nav-link">About</a>
             <a href="/contact.html" class="nav-link">Contact Us</a>
           </nav>
           <div class="nav-icons">
@@ -35,7 +35,7 @@
           <p class="hero-description">
             Created to change everything for the better. For everyone
           </p>
-          <button class="btn-outline">Shop Now</button>
+          <a href="#products" class="btn-outline">Shop Now</a>
         </div>
         <div class="hero-image">
           <img src="./images/iphone.png" alt="iPhone 14 Pro" />
@@ -44,200 +44,77 @@
     </section>
 
     <!-- Slider -->
-    <section class="banners">
-      <div class="slider">
+    <section class="slider">
         <div class="img_container">
             <img id="img" src="img/1.avif" alt="">
         </div>
-    </div>
     </section>
 
-    <!-- Browse by Category -->
+    <!-- Filter by Category -->
     <section class="categories">
       <div class="container">
-        <h2 class="section-title">Browse By Category</h2>
-        <div class="category-grid">
-          <div class="category-item">
-            <div class="category-icon">📱</div>
-            <span>Phones</span>
-          </div>
-          <div class="category-item">
-            <div class="category-icon">⌚</div>
-            <span>Smart Watches</span>
-          </div>
-          <div class="category-item">
-            <div class="category-icon">📷</div>
-            <span>Cameras</span>
-          </div>
-          <div class="category-item">
-            <div class="category-icon">🎧</div>
-            <span>Headphones</span>
-          </div>
-          <div class="category-item">
-            <div class="category-icon">💻</div>
-            <span>Computers</span>
-          </div>
-          <div class="category-item">
-            <div class="category-icon">🎮</div>
-            <span>Gaming</span>
-          </div>
-        </div>
+        <h2 class="section-title">Explore Our Products</h2>
       </div>
     </section>
 
     <!-- Products Grid with Filters -->
-    <section class="products">
+    <section class="products" id="products">
       <div class="container">
         <div class="products-layout">
           <!-- Sidebar Filters -->
           <aside class="filters-sidebar">
             <div class="filter-group">
-              <label class="filter-item">
-                <input type="checkbox" checked />
+              <span style="font-weight: bold;font-size: large;text-align: center;">Filters</span>
+              <hr >
+              <span style="font-weight:600;font-size: medium;">Categories</span>
+              <div class="filter-item">
                 <span class="filter-label"
-                  >Apple <span class="filter-count">110</span></span
+                  >ALL <span class="filter-count">📦</span></span
                 >
-              </label>
-              <label class="filter-item">
-                <input type="checkbox" />
+              </div>
+              <div class="filter-item">
                 <span class="filter-label"
-                  >Samsung <span class="filter-count">125</span></span
+                  >Phones <span class="filter-count">📱</span></span
                 >
-              </label>
-              <label class="filter-item">
-                <input type="checkbox" />
+              </div>
+              <div class="filter-item">
                 <span class="filter-label"
-                  >Xiaomi <span class="filter-count">68</span></span
+                  >Smart Watches <span class="filter-count">⌚</span></span
                 >
-              </label>
-              <label class="filter-item">
-                <input type="checkbox" />
+              </div>
+              <div class="filter-item">
                 <span class="filter-label"
-                  >Poco <span class="filter-count">44</span></span
+                  >Cameras <span class="filter-count">📷</span></span
                 >
-              </label>
-              <label class="filter-item">
-                <input type="checkbox" />
+              </div>
+              <div class="filter-item">
                 <span class="filter-label"
-                  >OPPO <span class="filter-count">36</span></span
+                  >Headphones <span class="filter-count">🎧</span></span
                 >
-              </label>
-              <label class="filter-item">
-                <input type="checkbox" />
+              </div>
+              <div class="filter-item">
                 <span class="filter-label"
-                  >Honor <span class="filter-count">10</span></span
+                  >Computers <span class="filter-count">💻</span></span
                 >
-              </label>
-              <label class="filter-item">
-                <input type="checkbox" />
+              </div>
+              <div class="filter-item">
                 <span class="filter-label"
-                  >Motorola <span class="filter-count">34</span></span
+                  >Gaming <span class="filter-count">🎮</span></span
                 >
-              </label>
-              <label class="filter-item">
-                <input type="checkbox" />
-                <span class="filter-label"
-                  >Nokia <span class="filter-count">22</span></span
-                >
-              </label>
-              <label class="filter-item">
-                <input type="checkbox" />
-                <span class="filter-label"
-                  >Realme <span class="filter-count">35</span></span
-                >
-              </label>
+              </div>
+              <span style="font-weight:600;font-size: medium;" >Price</span>
+              <div class="filter-price">
+                <input class="price-filter" type="number" placeholder="min" id="min">
+                <span> - </span>
+                <input  class="price-filter"  type="number" placeholder="max" id="max">
+              </div>
+              <button class="filter-price filter-btn">Filter</button>
             </div>
           </aside>
 
           <!-- Products Content -->
           <div class="products-content">
-            <div class="products-grid">
-              <!-- Row 1 -->
-              <div class="product-card">
-                <div class="product-image">
-                  <span class="wishlist">♡</span>
-                  <img src="iphone-14-pro-gold.png" alt="iPhone 14 Pro" />
-                </div>
-                <h4>Apple iPhone 14 Pro 512GB Gold (MQ233)</h4>
-                <p class="price">$1437</p>
-                <button class="btn-buy">Buy Now</button>
-              </div>
-              <div class="product-card">
-                <div class="product-image">
-                  <span class="wishlist">♡</span>
-                  <img src="iphone-11-white.png" alt="iPhone 11" />
-                </div>
-                <h4>Apple iPhone 11 128GB White (MQ233)</h4>
-                <p class="price">$510</p>
-                <button class="btn-buy">Buy Now</button>
-              </div>
-              <div class="product-card">
-                <div class="product-image">
-                  <span class="wishlist">♡</span>
-                  <img src="iphone-11-white-2.png" alt="iPhone 11" />
-                </div>
-                <h4>Apple iPhone 11 128GB White (MQ233)</h4>
-                <p class="price">$550</p>
-                <button class="btn-buy">Buy Now</button>
-              </div>
-
-              <!-- Row 2 -->
-              <div class="product-card">
-                <div class="product-image">
-                  <span class="wishlist">♡</span>
-                  <img src="iphone-14-pro-silver.png" alt="iPhone 14 Pro" />
-                </div>
-                <h4>Apple iPhone 14 Pro 1TB Gold (MQ2V3)</h4>
-                <p class="price">$1499</p>
-                <button class="btn-buy">Buy Now</button>
-              </div>
-              <div class="product-card">
-                <div class="product-image">
-                  <span class="wishlist">♡</span>
-                  <img src="iphone-14-pro-gold-2.png" alt="iPhone 14 Pro" />
-                </div>
-                <h4>Apple iPhone 14 Pro 1TB Gold (MQ2V3)</h4>
-                <p class="price">$1399</p>
-                <button class="btn-buy">Buy Now</button>
-              </div>
-              <div class="product-card">
-                <div class="product-image">
-                  <span class="wishlist">♡</span>
-                  <img src="iphone-14-pro-purple.png" alt="iPhone 14 Pro" />
-                </div>
-                <h4>Apple iPhone 14 Pro 128GB Deep Purple (MQ0G3)</h4>
-                <p class="price">$1600</p>
-                <button class="btn-buy">Buy Now</button>
-              </div>
-
-              <!-- Row 3 -->
-              <div class="product-card">
-                <div class="product-image">
-                  <span class="wishlist">♡</span>
-                  <img src="iphone-13-pink.png" alt="iPhone 13" />
-                </div>
-                <h4>Apple iPhone 13 mini 128GB Pink (MLK23)</h4>
-                <p class="price">$850</p>
-                <button class="btn-buy">Buy Now</button>
-              </div>
-              <div class="product-card">
-                <div class="product-image">
-                  <span class="wishlist">♡</span>
-                  <img src="iphone-14-pro-black.png" alt="iPhone 14 Pro" />
-                </div>
-                <h4>Apple iPhone 14 Pro 256GB Space Black (MQ0T3)</h4>
-                <p class="price">$1399</p>
-                <button class="btn-buy">Buy Now</button>
-              </div>
-              <div class="product-card">
-                <div class="product-image">
-                  <span class="wishlist">♡</span>
-                  <img src="iphone-14-pro-silver-2.png" alt="iPhone 14 Pro" />
-                </div>
-                <h4>Apple iPhone 14 Pro 256GB Silver (MQ103)</h4>
-                <p class="price">$1399</p>
-                <button class="btn-buy">Buy Now</button>
-              </div>
+            <div class="products-grid" id="productsGrid">
             </div>
           </div>
         </div>

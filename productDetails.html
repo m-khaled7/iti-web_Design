@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 14 Pro Max - Cyber</title>
+    <link rel="stylesheet" href="/style/productDetails.css">
+</head>
+<body>
+    <!-- Header -->
+  <header class="header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">Cyber</div>
+          <nav class="nav-menu">
+            <a href="/index.html" class="nav-link active">Home</a>
+            <a href="/about.html" class="nav-link">About</a>
+            <a href="/contact.html" class="nav-link">Contact Us</a>
+          </nav>
+          <div class="nav-icons">
+            <a href="/cart.html" class="icon">🛒</a>
+            <a href="#" class="icon">👤</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Product Details Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-layout">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="iphone-14-pro-main.png" alt="iPhone 14 Pro Max" id="mainProductImage">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-badge">New Arrival</div>
+                    <h1 class="product-title">Apple iPhone 14 Pro Max</h1>
+                    <div class="product-meta">
+                        <span class="category">📱 Smartphones</span>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="current-price">EGP1,399</div>
+                    </div>
+
+                    <div class="product-description">
+                        <h3>Description</h3>
+                        <p>The iPhone 14 Pro Max display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.69 inches diagonally.</p>
+                        <p>The iPhone 14 Pro Max features a ceramic shield front, textured matte glass back and stainless steel design with an advanced camera system for better photos in any light.</p>
+                    </div>
+                    <!-- Quantity and Actions -->
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">−</button>
+                            <input type="number" value="1" min="1" class="qty-input" readonly>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="specs-section">
+        <div class="container">
+            <h2 class="section-title">Technical Specifications</h2>
+            
+
+            <div class="specs-content">
+                <!-- General Specs -->
+                <div class="spec-panel active" id="general">
+                    <div class="spec-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Model</span>
+                            <span class="spec-value">iPhone 14 Pro Max</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Brand</span>
+                            <span class="spec-value">Apple</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Release Date</span>
+                            <span class="spec-value">September 2022</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Dimensions</span>
+                            <span class="spec-value">160.7 x 77.6 x 7.85 mm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Weight</span>
+                            <span class="spec-value">240g (8.47 oz)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Build</span>
+                            <span class="spec-value">Glass front/back, Stainless steel frame</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">SIM</span>
+                            <span class="spec-value">Dual SIM (Nano-SIM and eSIM)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Water Resistance</span>
+                            <span class="spec-value">IP68 dust/water resistant (up to 6m for 30 mins)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">cyber</div>
+                    <p>We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Bonus program</a></li>
+                        <li><a href="#">Gift cards</a></li>
+                        <li><a href="#">Credit and payment</a></li>
+                        <li><a href="#">Service contracts</a></li>
+                        <li><a href="#">Non-cash account</a></li>
+                        <li><a href="#">Payment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Assistance to the buyer</h4>
+                    <ul>
+                        <li><a href="#">Find an order</a></li>
+                        <li><a href="#">Terms of delivery</a></li>
+                        <li><a href="#">Exchange and return of goods</a></li>
+                        <li><a href="#">Guarantee</a></li>
+                        <li><a href="#">Frequently asked questions</a></li>
+                        <li><a href="#">Terms of use of the site</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+
+        // Quantity selector
+        document.querySelector('.qty-btn.plus').addEventListener('click', function() {
+            const input = document.querySelector('.qty-input');
+            input.value = parseInt(input.value) + 1;
+        });
+
+        document.querySelector('.qty-btn.minus').addEventListener('click', function() {
+            const input = document.querySelector('.qty-input');
+            if (parseInt(input.value) > 1) {
+                input.value = parseInt(input.value) - 1;
+            }
+        });
+
+        // Specs tabs
+        document.querySelectorAll('.spec-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const targetTab = this.getAttribute('data-tab');
+                
+                document.querySelectorAll('.spec-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.spec-panel').forEach(p => p.classList.remove('active'));
+                
+                this.classList.add('active');
+                document.getElementById(targetTab).classList.add('active');
+            });
+        });
+        
+    </script>
+</body>
+</html>
